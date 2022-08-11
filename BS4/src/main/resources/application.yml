@@ -1,0 +1,4 @@
+valor.VAR1 : CONTENIDO DE VALOR1
+valor.MyVAR2 : 100
+valor.VAR3 : ${VAR_SIS3:Valor_Defecto}
+

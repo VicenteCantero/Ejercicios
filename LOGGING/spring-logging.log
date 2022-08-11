@@ -1,0 +1,30 @@
+2022-07-20 07:12:16.628 ERROR 14580 --- [http-nio-8080-exec-1] com.bosonit.LOGGING.controlador          : Hola soy un log de error
+2022-07-20 07:12:47.423 ERROR 14580 --- [http-nio-8080-exec-3] com.bosonit.LOGGING.controlador          : Hola soy un log de error
+2022-07-20 07:13:05.187 ERROR 14580 --- [http-nio-8080-exec-4] com.bosonit.LOGGING.controlador          : Hola soy un log de error
+2022-07-20 07:13:26.055 ERROR 14580 --- [http-nio-8080-exec-5] com.bosonit.LOGGING.controlador          : Hola soy un log de error
+2022-07-20 07:13:51.301 ERROR 14580 --- [http-nio-8080-exec-9] com.bosonit.LOGGING.controlador          : Hola soy un log de info
+2022-07-20 07:13:52.355 ERROR 14580 --- [http-nio-8080-exec-10] com.bosonit.LOGGING.controlador          : Hola soy un log de info
+2022-07-20 07:13:53.163 ERROR 14580 --- [http-nio-8080-exec-2] com.bosonit.LOGGING.controlador          : Hola soy un log de info
+2022-07-20 07:15:41.270 ERROR 17200 --- [http-nio-8080-exec-2] com.bosonit.LOGGING.controlador          : Hola soy un log de info
+2022-07-20 07:15:42.168 ERROR 17200 --- [http-nio-8080-exec-3] com.bosonit.LOGGING.controlador          : Hola soy un log de info
+2022-07-20 07:15:42.907 ERROR 17200 --- [http-nio-8080-exec-5] com.bosonit.LOGGING.controlador          : Hola soy un log de info
+2022-07-20 07:18:21.929 ERROR 1580 --- [http-nio-8080-exec-1] com.bosonit.LOGGING.controlador          : Hola soy un log de info
+2022-07-20 07:18:22.699 ERROR 1580 --- [http-nio-8080-exec-3] com.bosonit.LOGGING.controlador          : Hola soy un log de info
+2022-07-20 07:18:29.250 ERROR 1580 --- [http-nio-8080-exec-4] com.bosonit.LOGGING.controlador          : Hola soy un log de error
+2022-07-20 07:18:30.106 ERROR 1580 --- [http-nio-8080-exec-5] com.bosonit.LOGGING.controlador          : Hola soy un log de error
+2022-07-20 09:32:24.662 ERROR 14552 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2022-07-20 09:32:51.392 ERROR 2732 --- [http-nio-8080-exec-5] com.bosonit.LOGGING.controlador          : Hola soy un log de info
+2022-07-20 09:33:04.209 ERROR 2732 --- [http-nio-8080-exec-3] com.bosonit.LOGGING.controlador          : Hola soy un log de error
