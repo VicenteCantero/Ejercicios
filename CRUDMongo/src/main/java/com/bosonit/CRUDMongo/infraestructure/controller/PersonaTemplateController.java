@@ -24,7 +24,7 @@ public class PersonaTemplateController {
     }
 
     @GetMapping(value= "/find/{id}")
-    public Persona find (@PathVariable int id){
+    public List<Persona> find (@PathVariable int id){
         return personaService.damePersonaByID(id);
     }
 
@@ -36,7 +36,7 @@ public class PersonaTemplateController {
 
     @DeleteMapping(value= "/delete/{id}")
     public ResponseEntity<Persona> delete (@PathVariable int id){
-        Persona personaEncontrada= personaService.damePersonaByID(id);
+        Persona personaEncontrada= (Persona) personaService.damePersonaByID(id);
         if (personaEncontrada != null){
             personaService.borraByID(id);
         }else{

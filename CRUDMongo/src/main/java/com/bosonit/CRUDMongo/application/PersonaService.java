@@ -15,7 +15,7 @@ public interface PersonaService extends GenericService<Persona, Integer> {
 
     void borraByID(int id);
 
-    Persona damePersonaByID(int id);
+    List<Persona> damePersonaByID(int id);
 
     List<Persona> damePersonas();
 }

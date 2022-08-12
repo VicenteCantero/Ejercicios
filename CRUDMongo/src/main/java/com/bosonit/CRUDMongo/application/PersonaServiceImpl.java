@@ -63,19 +63,18 @@ public class PersonaServiceImpl extends GenericImpl<Persona, Integer> implements
     }
 
     @Override
-    public Persona damePersonaByID(int id) {
-        Persona personaID = new Persona();
+    public List<Persona> damePersonaByID(int id) {
+
         Query query = new Query();
         query.addCriteria(Criteria.where("id_persona").is(id));
-        mongoTemplate.find(query, Persona.class);
-        return personaID;
+        return mongoTemplate.find(query, Persona.class);
+
     }
 
     @Override
     public List<Persona> damePersonas() {
-        List<Persona> listaPersonas = new ArrayList<>();
-        mongoTemplate.findAll(Persona.class).forEach(p -> listaPersonas.add(new Persona(p)));
-        return listaPersonas;
+        return mongoTemplate.findAll(Persona.class);
+
     }
 
 
