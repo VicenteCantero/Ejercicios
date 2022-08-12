@@ -17,4 +17,25 @@ public class Persona {
     private String apellido;
     private String direccion;
     private int edad;
+
+
+
+    public void put(Persona persona) throws Exception{
+        try {
+            if (persona.getNombre() != null) {
+                setNombre(persona.getNombre());
+            }
+            if (persona.getApellido() != null) {
+                setApellido(persona.getApellido());
+            }
+            if (persona.getDireccion() != null) {
+                setDireccion(persona.getDireccion());
+            }
+            if (String.valueOf(persona.getEdad()) != null) {
+                setEdad(persona.getEdad());
+            }
+        }catch (Exception e){
+            throw new RuntimeException("Campos erróneos");
+        }
+    }
 }

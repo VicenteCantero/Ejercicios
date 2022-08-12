@@ -43,4 +43,14 @@ public class PersonaController {
         }
         return new ResponseEntity<Persona>(personaEncontrada, HttpStatus.OK);
     }
+
+
+    @RequestMapping(value = "/put/{id}", method = RequestMethod.PUT)
+    ResponseEntity<Persona> actualizaPersona(@PathVariable("id") int id, @RequestBody Persona persona) throws Exception {
+        try {
+            return new ResponseEntity<>(personaService.put(id, persona), HttpStatus.OK);
+        } catch (Exception e) {
+            throw new RuntimeException("No existe el id");
+        }
+    }
 }

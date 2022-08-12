@@ -37,5 +37,7 @@ public abstract class GenericImpl<T, ID extends Serializable> implements Generic
         return lista;
     }
 
+
+
     public abstract MongoRepository<T, ID> getDao();
 }

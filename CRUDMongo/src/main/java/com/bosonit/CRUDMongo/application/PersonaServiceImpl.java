@@ -19,4 +19,22 @@ public class PersonaServiceImpl extends GenericImpl<Persona, Integer> implements
     public MongoRepository<Persona, Integer> getDao() {
         return personaRepository;
     }
+
+    @Override
+    public Persona put(int id, Persona persona) {
+
+        try {
+           Persona personaEncontrada = personaRepository.findById(id)
+                    .orElseThrow(() -> new RuntimeException("Persona con esa id no encontrada"));
+
+            personaEncontrada.put(persona);
+            personaRepository.save(personaEncontrada);
+
+            return personaEncontrada;
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
+
+    }
 }
