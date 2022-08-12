@@ -1,5 +1,7 @@
 package com.bosonit.CRUDMongo.application.generico;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Service;
 
@@ -10,6 +12,7 @@ import java.util.Optional;
 
 @Service
 public abstract class GenericImpl<T, ID extends Serializable> implements GenericService<T, ID> {
+
 
     @Override
     public T save(T entity) {

@@ -18,6 +18,8 @@ public class Persona {
     private String direccion;
     private int edad;
 
+    public Persona(Persona persona) {
+    }
 
 
     public void put(Persona persona) throws Exception{
