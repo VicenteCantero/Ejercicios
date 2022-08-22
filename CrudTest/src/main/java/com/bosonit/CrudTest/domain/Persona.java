@@ -32,6 +32,10 @@ public class Persona {
     }
 
 
+    public Persona (String nombre, int edad){
+        this.nombre=nombre;
+        this.edad=edad;
+    }
 
     public void put(PersonaInputDto persona) throws Exception{
         try {
@@ -45,4 +49,5 @@ public class Persona {
             throw new RuntimeException("Campos erróneos");
         }
     }
+
 }
