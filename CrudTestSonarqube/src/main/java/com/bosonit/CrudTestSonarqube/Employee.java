@@ -2,12 +2,11 @@ package com.bosonit.CrudTestSonarqube;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@Data
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
@@ -27,5 +26,19 @@ public class Employee {
 
     @Column(name = "email", nullable = false)
     private String email;
+
+    public long getId() {
+        return id;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+
 }
 
