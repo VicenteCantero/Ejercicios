@@ -1,9 +1,8 @@
-package com.bosonit.CrudTest.domain;
+package com.bosonit.CrudTest.Persona.domain;
 
-import com.bosonit.CrudTest.infraestructure.dto.PersonaInputDto;
+import com.bosonit.CrudTest.Persona.infraestructure.dto.PersonaInputDto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Generated;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;

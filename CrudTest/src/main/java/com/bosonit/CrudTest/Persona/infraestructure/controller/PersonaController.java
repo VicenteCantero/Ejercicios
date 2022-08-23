@@ -1,10 +1,9 @@
-package com.bosonit.CrudTest.infraestructure.controller;
+package com.bosonit.CrudTest.Persona.infraestructure.controller;
 
 
-import com.bosonit.CrudTest.application.PersonaService;
-import com.bosonit.CrudTest.domain.Persona;
-import com.bosonit.CrudTest.infraestructure.dto.PersonaInputDto;
-import com.bosonit.CrudTest.infraestructure.dto.PersonaOutputDto;
+import com.bosonit.CrudTest.Persona.application.PersonaService;
+import com.bosonit.CrudTest.Persona.infraestructure.dto.PersonaInputDto;
+import com.bosonit.CrudTest.Persona.infraestructure.dto.PersonaOutputDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,24 +21,24 @@ public class PersonaController {
 
 
 
-    @GetMapping(value = "/all")
+    @GetMapping(value = "/publico/all")
     public List<PersonaOutputDto> getAll(){
         return personaService.getall();
     }
 
-    @GetMapping(value= "/find/{id}")
+    @GetMapping(value= "/publico/find/{id}")
     public PersonaOutputDto find (@PathVariable int id){
         return personaService.get(id);
     }
 
 
-    @PostMapping(value= "/save")
+    @PostMapping(value= "/admin/save")
     public PersonaOutputDto save (@RequestBody PersonaInputDto personaInputDto){
         return personaService.save(personaInputDto);
     }
 
 
-    @DeleteMapping(value= "/delete/{id}")
+    @DeleteMapping(value= "/admin/delete/{id}")
     public ResponseEntity<PersonaOutputDto> delete (@PathVariable int id){
         PersonaOutputDto personaEncontrada= personaService.get(id);
         if (personaEncontrada != null){
@@ -51,7 +50,7 @@ public class PersonaController {
     }
 
 
-    @RequestMapping(value = "/put/{id}", method = RequestMethod.PUT)
+    @RequestMapping(value = "/admin/put/{id}", method = RequestMethod.PUT)
     ResponseEntity<PersonaOutputDto> actualizaPersona(@PathVariable("id") int id, @RequestBody PersonaInputDto personaInputDto) throws Exception {
         try {
             return new ResponseEntity<PersonaOutputDto>((PersonaOutputDto) personaService.put(id, personaInputDto), HttpStatus.OK);

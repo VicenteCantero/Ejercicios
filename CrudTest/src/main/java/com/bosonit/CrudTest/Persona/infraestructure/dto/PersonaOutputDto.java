@@ -1,6 +1,6 @@
-package com.bosonit.CrudTest.infraestructure.dto;
+package com.bosonit.CrudTest.Persona.infraestructure.dto;
 
-import com.bosonit.CrudTest.domain.Persona;
+import com.bosonit.CrudTest.Persona.domain.Persona;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

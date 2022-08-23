@@ -1,9 +1,10 @@
-package com.bosonit.CrudTest.application;
+package com.bosonit.CrudTest.Persona.application;
 
-import com.bosonit.CrudTest.domain.Persona;
-import com.bosonit.CrudTest.infraestructure.dto.PersonaInputDto;
-import com.bosonit.CrudTest.infraestructure.dto.PersonaOutputDto;
-import com.bosonit.CrudTest.infraestructure.repository.PersonaRepository;
+import com.bosonit.CrudTest.Persona.application.PersonaService;
+import com.bosonit.CrudTest.Persona.domain.Persona;
+import com.bosonit.CrudTest.Persona.infraestructure.dto.PersonaInputDto;
+import com.bosonit.CrudTest.Persona.infraestructure.dto.PersonaOutputDto;
+import com.bosonit.CrudTest.Persona.infraestructure.repository.PersonaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.http.HttpStatus;
@@ -14,7 +15,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import java.util.List;
 
 @Service
-public class PersonaServiceImpl implements PersonaService{
+public class PersonaServiceImpl implements PersonaService {
     @Autowired
     PersonaRepository personaRepository;
 

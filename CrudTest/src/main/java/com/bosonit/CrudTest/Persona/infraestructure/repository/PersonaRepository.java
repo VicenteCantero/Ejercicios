@@ -1,7 +1,6 @@
-package com.bosonit.CrudTest.infraestructure.repository;
+package com.bosonit.CrudTest.Persona.infraestructure.repository;
 
-import com.bosonit.CrudTest.domain.Persona;
-import com.bosonit.CrudTest.infraestructure.dto.PersonaOutputDto;
+import com.bosonit.CrudTest.Persona.domain.Persona;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
