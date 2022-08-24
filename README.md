@@ -1,6 +1,7 @@
 ![Bosonit](https://cdn.bosonit.com/n-content/uploads/2021/12/bosonit_web.png)
 # Backend 
 > Repositorio de ejercicios Java por Vicente Cantero Luna.
+[FICHERO AQUI](https://github.com/VicenteCanteroLuna/Ejercicios/blob/main/Plan%20estudios%20Java%5B2305843009213726393%5D.rtf)
 
 ## Exercises
 
