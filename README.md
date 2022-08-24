@@ -1,7 +1,6 @@
-
+![Bosonit](https://media-exp1.licdn.com/dms/image/C4E16AQHZpE420a92qQ/profile-displaybackgroundimage-shrink_200_800/0/1652215280622?e=1665619200&v=beta&t=6xjGLUn8y9cTn0WWcHTcSjsHo-9D_5vc_XKIeuwhCyY)
 > Repositorio de ejercicios Java por Vicente Cantero Luna.
 >[FICHERO AQUI](https://github.com/VicenteCanteroLuna/Ejercicios/blob/main/Plan%20estudios%20Java.docx)
-![Bosonit](http://www.aeiriojaautomocion.es/wp-content/uploads/2019/06/logo-bosonit-fondo-blanco-Web-socios-1.png)
 ## Ejercicios
 
 - [LeeryEscribirFicheros](https://github.com/VicenteCanteroLuna/Ejercicios/tree/main/Ejercicios)
