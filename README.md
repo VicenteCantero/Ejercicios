@@ -1,4 +1,4 @@
-![Bosonit](https://cdn.bosonit.com/n-content/uploads/2021/12/bosonit_web.png)
+![Bosonit](http://www.aeiriojaautomocion.es/wp-content/uploads/2019/06/logo-bosonit-fondo-blanco-Web-socios-1.png)
 # Backend 
 > Repositorio de ejercicios Java por Vicente Cantero Luna.
 >[FICHERO AQUI](https://github.com/VicenteCanteroLuna/Ejercicios/blob/main/Plan%20estudios%20Java.docx)
