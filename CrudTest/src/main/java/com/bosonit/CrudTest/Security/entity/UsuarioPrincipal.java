@@ -29,6 +29,9 @@ public class UsuarioPrincipal implements UserDetails {
         this.authorities = authorities;
     }
 
+    public UsuarioPrincipal(Usuario p) {
+    }
+
 
     public static UsuarioPrincipal build(Usuario usuario){
         List<GrantedAuthority> authorities=

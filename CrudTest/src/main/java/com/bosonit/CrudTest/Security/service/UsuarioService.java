@@ -1,11 +1,14 @@
 package com.bosonit.CrudTest.Security.service;
 
+import com.bosonit.CrudTest.Persona.infraestructure.dto.PersonaOutputDto;
 import com.bosonit.CrudTest.Security.entity.Usuario;
+import com.bosonit.CrudTest.Security.entity.UsuarioPrincipal;
 import com.bosonit.CrudTest.Security.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -30,6 +33,15 @@ public class UsuarioService {
 
     public void save(Usuario usuario) {
         usuarioRepository.save(usuario);
+    }
+
+    public List<Usuario> getall() {
+
+        List<Usuario> usuarios;
+        //buscamos todas los objetos en el repositorio y los casteamos a nuestro objeto de salida
+        usuarios = usuarioRepository.findAll();
+
+        return usuarios;
     }
 }
 

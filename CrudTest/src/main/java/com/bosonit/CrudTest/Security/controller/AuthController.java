@@ -1,8 +1,12 @@
 package com.bosonit.CrudTest.Security.controller;
 
+import com.bosonit.CrudTest.Persona.infraestructure.dto.PersonaOutputDto;
+import com.bosonit.CrudTest.Security.dto.JwtDto;
+import com.bosonit.CrudTest.Security.dto.LoginUsuario;
 import com.bosonit.CrudTest.Security.dto.NuevoUsuario;
 import com.bosonit.CrudTest.Security.entity.Rol;
 import com.bosonit.CrudTest.Security.entity.Usuario;
+import com.bosonit.CrudTest.Security.entity.UsuarioPrincipal;
 import com.bosonit.CrudTest.Security.enums.RolNombre;
 import com.bosonit.CrudTest.Security.jwt.JwtProvider;
 import com.bosonit.CrudTest.Security.service.RolService;
@@ -11,12 +15,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @RestController
@@ -62,6 +71,23 @@ public class AuthController {
         return new ResponseEntity<>(("Usuario guardado"), HttpStatus.CREATED);
     }
 
+    @PostMapping("/login")
+    public ResponseEntity<JwtDto> login(@Valid @RequestBody LoginUsuario loginUsuario, BindingResult bindingResult){
+        if(bindingResult.hasErrors())
+            return new ResponseEntity(("campos mal puestos"), HttpStatus.BAD_REQUEST);
+        Authentication authentication =
+                authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(loginUsuario.getNombreUsuario(), loginUsuario.getPassword()));
+        SecurityContextHolder.getContext().setAuthentication(authentication);
+        String jwt = jwtProvider.generateToken(authentication);
+        UserDetails userDetails = (UserDetails)authentication.getPrincipal();
+        JwtDto jwtDto = new JwtDto(jwt, userDetails.getUsername(), userDetails.getAuthorities());
+        return new ResponseEntity(jwtDto, HttpStatus.OK);
+    }
+
+    @GetMapping(value = "/all")
+    public List<Usuario> getAll(){
+        return usuarioService.getall();
+    }
 
 
 }
