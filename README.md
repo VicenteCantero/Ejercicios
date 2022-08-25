@@ -25,3 +25,4 @@
 - [SA1. WebSockets](https://github.com/VicenteCanteroLuna/Ejercicios/tree/main/websocket)
 - [EJTE1. Testing and SonarQube](https://github.com/VicenteCanteroLuna/Ejercicios/tree/main/CrudTestSonarqube)
 - [EJS3-1. JWT + CRUD](https://github.com/VicenteCanteroLuna/Ejercicios/tree/main/CrudTest) 
+- [EJKA-1 KAFKA](https://github.com/VicenteCanteroLuna/Ejercicios/tree/main/kafka) 
