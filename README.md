@@ -1,9 +1,17 @@
-![Bosonit](https://media-exp1.licdn.com/dms/image/C4E16AQHZpE420a92qQ/profile-displaybackgroundimage-shrink_200_800/0/1652215280622?e=1665619200&v=beta&t=6xjGLUn8y9cTn0WWcHTcSjsHo-9D_5vc_XKIeuwhCyY)
-> Repositorio de ejercicios Java por Vicente Cantero Luna.
->[FICHERO AQUI](https://github.com/VicenteCanteroLuna/Ejercicios/blob/main/Plan%20estudios%20Java.docx)
-## Ejercicios
 
-- [LeeryEscribirFicheros](https://github.com/VicenteCanteroLuna/Ejercicios/tree/main/Ejercicios)
+<p align="center"> 
+<img align ="center" width= "800px" src="https://camo.githubusercontent.com/f1b6220f442416e1e2c97f390e0bcfad7432eb99596000a0d29afd5b753c82ac/68747470733a2f2f6d656469612d657870312e6c6963646e2e636f6d2f646d732f696d6167652f43344531364151485a704534323061393271512f70726f66696c652d646973706c61796261636b67726f756e64696d6167652d736872696e6b5f3230305f3830302f302f313635323231353238303632323f653d3136363536313932303026763d6265746126743d36786a474c556e38793963546e30575763485463536a73486f2d39445f3576635f584b4965757768437959" />
+</p>
+
+<p align="center"> Repositorio de ejercicios Java por Vicente Cantero Luna. <br/>
+<a  align="center" href="https://github.com/VicenteCanteroLuna/Ejercicios/blob/main/Plan%20estudios%20Java.docx"> FICHERO AQUI</a>
+</p>
+
+
+<h2 align="center"> <strong> Ejercicios</strong></h2>
+
+
+- [LeeryEscribirFicheros](https://github.com/VicenteCanteroLuna/Ejercicios/tree/main/Ejercicios)  
 - [Git](https://github.com/VicenteCanteroLuna/PROYECTOGIT)
 - [BSO. Introduccion a Spring Boot](https://github.com/VicenteCanteroLuna/Ejercicios/tree/main/BS)
 - [BSO. Introduccion a Spring Boot](https://github.com/VicenteCanteroLuna/Ejercicios/tree/main/BS0)
@@ -26,3 +34,4 @@
 - [EJTE1. Testing and SonarQube](https://github.com/VicenteCanteroLuna/Ejercicios/tree/main/CrudTestSonarqube)
 - [EJS3-1. JWT + CRUD](https://github.com/VicenteCanteroLuna/Ejercicios/tree/main/CrudTest) 
 - [EJKA-1 KAFKA](https://github.com/VicenteCanteroLuna/Ejercicios/tree/main/kafka) 
+
